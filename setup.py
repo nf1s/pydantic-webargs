@@ -13,7 +13,7 @@ with io.open("pydantic_webargs/__init__.py", "rt", encoding="utf8") as f:
 setup(
     name="pydantic_webargs",
     version=version,
-    description="Sanic Pydatic",
+    description="Pydatic webargs",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://ahmednafies.github.io/pydantic_webargs/",
@@ -21,7 +21,7 @@ setup(
     author_email="ahmed.nafies@gmail.com",
     license="MIT",
     packages=["pydantic_webargs"],
-    install_requires=["sanic", "pydantic"],
+    install_requires=["flask", "pydantic"],
     extras_require={
         "dev": [
             "pipenv",

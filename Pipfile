@@ -11,6 +11,8 @@ ipdb = "*"
 black = "*"
 pygments = "*"
 requests = "*"
+pytest = "*"
+pdbpp = "*"
 
 [packages]
 twine = "*"

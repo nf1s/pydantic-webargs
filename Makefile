@@ -19,4 +19,4 @@ run-docs:
 	pipenv run mkdocs serve
 
 run-%:
-	pipenv run python example_$*.py
+	pipenv run python examples/$*.py

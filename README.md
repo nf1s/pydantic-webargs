@@ -1,5 +1,5 @@
 # Pyndatic Webargs
-[![CircleCI](https://circleci.com/gh/ahmednafies/pydantic-webargs.svg?style=shield)](https://circleci.com/gh/ahmednafies/pydantic-webargs) [![codecov](https://codecov.io/gh/ahmednafies/pydantic-webargs/branch/master/graph/badge.svg)](https://codecov.io/gh/ahmednafies/pydantic-webargs) ![GitHub Pipenv locked Python version](https://img.shields.io/github/pipenv/locked/python-version/ahmednafies/pydantic-webargs) [![Downloads](https://pepy.tech/badge/pydantic-webargs)](https://pepy.tech/project/pydantic-webargs) ![GitHub](https://img.shields.io/github/license/ahmednafies/pydantic-webargs)
+[![CircleCI](https://circleci.com/gh/ahmednafies/pydantic-webargs.svg?style=shield)](https://circleci.com/gh/ahmednafies/pydantic-webargs) [![codecov](https://codecov.io/gh/ahmednafies/pydantic-webargs/branch/master/graph/badge.svg)](https://codecov.io/gh/ahmednafies/pydantic-webargs) ![GitHub Pipenv locked Python version](https://img.shields.io/github/pipenv/locked/python-version/ahmednafies/pydantic-webargs) [![Downloads](https://pepy.tech/badge/pydantic-webargs)](https://pepy.tech/project/pydantic-webargs) ![license](https://img.shields.io/badge/license-MIT-green)
 
 A library for parsing and validating http requests for flask web-framework using pydantic library 
 

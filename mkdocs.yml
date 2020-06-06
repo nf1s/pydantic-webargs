@@ -1,0 +1,12 @@
+site_name: Pydantic Webargs
+nav:
+  - Getting Started: index.md
+  - Install: install.md
+  - Examples: examples.md
+
+theme:
+  name: "material"
+  palette:
+    primary: "brown"
+markdown_extensions:
+  - codehilite

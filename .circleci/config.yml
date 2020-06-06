@@ -26,7 +26,7 @@ commands:
       - run:
           name: run Tests
           command: |
-            make testcoverage
+            make test-coverage
             pipenv run coverage xml
       - store_artifacts:
           path: coverage.xml

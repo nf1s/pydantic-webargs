@@ -13,10 +13,10 @@ with io.open("pydantic_webargs/__init__.py", "rt", encoding="utf8") as f:
 setup(
     name="pydantic_webargs",
     version=version,
-    description="Pydatic webargs",
+    description="A library for parsing and validating http requests for Flask web framework using pydantic library",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://ahmednafies.github.io/pydantic_webargs/",
+    url="https://ahmednafies.github.io/pydantic-webargs/",
     author="Ahmed Nafies",
     author_email="ahmed.nafies@gmail.com",
     license="MIT",
@@ -35,8 +35,8 @@ setup(
         "docs": ["mkdocs", "mkdocs-material"],
     },
     project_urls={
-        "Documentation": "https://ahmednafies.github.io/pydantic_webargs/",
-        "Source": "https://github.com/ahmednafies/pydantic_webargs",
+        "Documentation": "https://ahmednafies.github.io/pydantic-webargs/",
+        "Source": "https://github.com/ahmednafies/pydantic-webargs",
     },
     classifiers=[
         "Intended Audience :: Developers",

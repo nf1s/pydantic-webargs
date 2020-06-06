@@ -17,6 +17,7 @@ pip install pydantic-webargs
 
 ## Dependencies
 
+	flask
 	pydantic
 
 ## Example

@@ -28,5 +28,19 @@ def example_post_endpoint(**kwargs):
     return response
 
 
+@app.route("/get-request-invalid", methods=["GET"])
+@webargs(query=QueryModel, body=BodyModel)
+def example_get_endpoint_invalid(**kwargs):
+    response = kwargs
+    return response
+
+
+@app.route("/get-request-invalid-args", methods=["GET"])
+@webargs(query=QueryModel)
+def example_get_endpoint_invalid_args(**kwargs):
+    response = kwargs
+    return response
+
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8000)

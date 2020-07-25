@@ -1,6 +1,8 @@
 from examples.server import app
 import pytest
 import json
+from pydantic_webargs import InvalidOperation
+from pydantic import ValidationError
 
 
 @pytest.fixture
@@ -29,3 +31,15 @@ def test_webargs_payload(client):
     expected_response = dict(payload=data, query=params)
     assert response.status_code == 200
     assert response.json == expected_response
+
+
+def test_webargs_query_invalid(client):
+    params = dict(name="ahmed")
+    with pytest.raises(InvalidOperation):
+        client.get("/get-request-invalid", query_string=params)
+
+
+def test_webargs_query_invalid_args(client):
+    params = dict(age=1234)
+    with pytest.raises(ValidationError):
+        client.get("/get-request-invalid-args", query_string=params)

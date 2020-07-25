@@ -3,7 +3,7 @@
 
 A library for parsing and validating http requests for flask web-framework using pydantic library 
 
-Full documentation [here](https://ahmednafies.github.io/pydantic_webargs/)
+Full documentation [here](https://ahmednafies.github.io/pydantic-webargs/)
 
 ## Requirements
 

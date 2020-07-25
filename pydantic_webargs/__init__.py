@@ -5,7 +5,7 @@ from flask import request
 __author__ = "Ahmed Nafies Okasha Mohamed <ahmed.nafies@gmail.com>"
 __copyright__ = "Copyright 2020, Ahmed Nafies Okasha Mohamed"
 __license__ = "MIT"
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 
 BODY_METHODS = ["POST", "PUT", "PATCH"]

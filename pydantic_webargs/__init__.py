@@ -25,7 +25,6 @@ def validate(query, body):
 
     payload = None
     query_params = None
-
     if body and request.method not in BODY_METHODS:
         raise InvalidOperation(
             f"Http method '{request.method}' does not contain a payload,"
@@ -37,7 +36,6 @@ def validate(query, body):
     if query:
         params = request.args
         query_params = query(**params).dict()
-
     return dict(payload=payload, query=query_params)
 
 
@@ -45,10 +43,7 @@ def webargs(query=None, body=None):
     def decorator(f):
         @wraps(f)
         def decorated_function(*args, **kwargs):
-            try:
-                result = validate(query, body)
-            except ValidationError as e:
-                return str(e)
+            result = validate(query, body)
             kwargs.update(result)
             response = f(*args, **kwargs)
             return response

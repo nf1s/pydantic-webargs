@@ -14,13 +14,13 @@ commands:
       - run:
           command: |
             sudo pip install pipenv
-            pipenv install --system --dev --pre
+            pipenv install --system
       - save_cache:
           key: deps9-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
           paths:
             - ".venv"
             - "/usr/local/bin"
-            - "/usr/local/lib/python3.7/site-packages"
+            - "/usr/local/lib/python3.6/site-packages"
   test:
     steps:
       - run:
@@ -50,7 +50,7 @@ jobs:
   test:
     working_directory: ~/pydantic-webargs
     docker:
-      - image: circleci/python:3.7.5
+      - image: circleci/python:3.6.4
     steps:
       - build
       - test
@@ -58,7 +58,7 @@ jobs:
   deploy:
     working_directory: ~/pydantic-webargs
     docker:
-      - image: circleci/python:3.7.5
+      - image: circleci/python:3.6.4
     steps:
       - build
       - deploy

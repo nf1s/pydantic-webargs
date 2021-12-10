@@ -10,12 +10,12 @@ pre-commit = "*"
 ipdb = "*"
 black = "*"
 pygments = "*"
-requests = "*"
-pytest = "*"
 pdbpp = "*"
-coverage = "*"
 
 [packages]
+requests = "*"
+coverage = "*"
+pytest = "*"
 twine = "*"
 flask = "*"
 pydantic = "*"
@@ -25,7 +25,7 @@ bleach = ">=3.*"
 jeepney = ">=0.4.2"
 
 [requires]
-python_version = "3.7"
+python_version = "3.6"
 
 [pipenv]
 allow_prereleases = true

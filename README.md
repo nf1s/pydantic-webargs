@@ -7,7 +7,7 @@ Full documentation [here](https://nf1s.github.io/pydantic-webargs/)
 
 ## Requirements
 
-	python >= 3.7
+	python >= 3.6
 
 ## How to install
 

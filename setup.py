@@ -16,7 +16,7 @@ setup(
     description="Pydatic webargs",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://ahmednafies.github.io/pydantic-webargs/",
+    url="https://nf1s.github.io/pydantic-webargs/",
     author="Ahmed Nafies",
     author_email="ahmed.nafies@gmail.com",
     license="MIT",
@@ -35,8 +35,8 @@ setup(
         "docs": ["mkdocs", "mkdocs-material"],
     },
     project_urls={
-        "Documentation": "https://ahmednafies.github.io/pydantic-webargs/",
-        "Source": "https://github.com/ahmednafies/pydantic-webargs",
+        "Documentation": "https://nf1s.github.io/pydantic-webargs/",
+        "Source": "https://github.com/nf1s/pydantic-webargs",
     },
     classifiers=[
         "Intended Audience :: Developers",

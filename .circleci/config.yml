@@ -50,7 +50,7 @@ jobs:
   test:
     working_directory: ~/pydantic-webargs
     docker:
-      - image: circleci/python:3.6.4
+      - image: circleci/python:3.6.10
     steps:
       - build
       - test
@@ -58,7 +58,7 @@ jobs:
   deploy:
     working_directory: ~/pydantic-webargs
     docker:
-      - image: circleci/python:3.6.4
+      - image: circleci/python:3.6.10
     steps:
       - build
       - deploy

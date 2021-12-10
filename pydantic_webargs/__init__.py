@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
 from functools import wraps
+
 from flask import request
 
-__author__ = "Ahmed Nafies Okasha Mohamed <ahmed.nafies@gmail.com>"
-__copyright__ = "Copyright 2020, Ahmed Nafies Okasha Mohamed"
+__author__ = "Ahmed Nafies <ahmed.nafies@gmail.com>"
+__copyright__ = "Copyright 2020, Ahmed Nafies"
 __license__ = "MIT"
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 
 
 BODY_METHODS = ["POST", "PUT", "PATCH"]

@@ -8,19 +8,19 @@ commands:
     steps:
       - checkout
       - run: sudo chown -R circleci:circleci /usr/local/bin
-      - run: sudo chown -R circleci:circleci /usr/local/lib/python3.6.10/site-packages
+      - run: sudo chown -R circleci:circleci /usr/local/lib/python3.7/site-packages
       - restore_cache:
           key: deps9-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
       - run:
           command: |
             sudo pip install pipenv
-            pipenv install --system --dev
+            pipenv install --system
       - save_cache:
           key: deps9-{{ .Branch }}-{{ checksum "Pipfile.lock" }}
           paths:
             - ".venv"
             - "/usr/local/bin"
-            - "/usr/local/lib/python3.6.10/site-packages"
+            - "/usr/local/lib/python3.7/site-packages"
   test:
     steps:
       - run:
@@ -50,7 +50,7 @@ jobs:
   test:
     working_directory: ~/pydantic-webargs
     docker:
-      - image: circleci/python:3.6.10
+      - image: circleci/python:3.7
     steps:
       - build
       - test
@@ -58,7 +58,7 @@ jobs:
   deploy:
     working_directory: ~/pydantic-webargs
     docker:
-      - image: circleci/python:3.6.10
+      - image: circleci/python:3.7
     steps:
       - build
       - deploy
